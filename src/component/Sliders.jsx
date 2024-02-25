@@ -20,7 +20,7 @@ const Sliders = () => {
     <>
       <div className="w-[100vw] h-[100vh] flex flex-col text-center items-center justify-center">
         <h1>Sliders</h1>
-        <div className="h-[500px] w-[80%] relative bg-red-200 flex flex-col text-center items-center justify-center overflow-hidden">
+        <div className="h-[500px] w-[80%] relative  flex flex-col text-center items-center justify-center overflow-hidden">
           <div className="flex w-full h-full">
             <div
               className="flex transition-transform duration-500"
@@ -31,7 +31,7 @@ const Sliders = () => {
             >
               {userData.map((slider, index) => (
                 <div
-                  className="  min-w-full h-full bg-red-600 text-white flex flex-col items-center justify-center"
+                  className="  min-w-full h-full bg-red-500 text-black flex flex-col items-center justify-center"
                   key={index}
                 >
                   <h1>{slider.user}</h1>

@@ -6,12 +6,14 @@ const Sliders = () => {
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide < userData.length - 1 ? prevSlide + 1 : prevSlide
+      prevSlide < userData.length - 1 ? prevSlide + 1 : setCurrentSlide(0)
     )
   }
 
   const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide > 0 ? prevSlide - 1 : prevSlide))
+    setCurrentSlide((prevSlide) =>
+      prevSlide > 0 ? prevSlide - 1 : setCurrentSlide(userData.length - 1)
+    )
   }
 
   return (

@@ -1,6 +1,7 @@
 import react from 'react'
+import Sliders from './component/Sliders.jsx'
 function App() {
-  return <h1>Hello World</h1>
+  return <Sliders />
 }
 
 export default App
